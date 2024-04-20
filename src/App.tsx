@@ -1,10 +1,11 @@
+import AlbumDatePicker from './clients/components/AlbumDatePicker';
 import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <p>nothing to render</p>
+      <AlbumDatePicker />
     </div>
   );
 }
