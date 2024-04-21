@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/nconf": "^0.10.6",
     "@types/react-datepicker": "^6.2.0",
     "cra-template-typescript": "1.2.0",
     "nconf": "^0.12.1",
