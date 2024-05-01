@@ -4,8 +4,10 @@ export async function getAllBucketImages(date: Date): Promise<void> {
     const response = await fetch(lambdaUrl, {
         method: "GET",
         headers: {
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
             "Content-Type": "text/plain",
-            "Access-Control-Allow-Origin": "*",
         }
     });
     console.log(response);
