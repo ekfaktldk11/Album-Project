@@ -11,6 +11,9 @@ export const getAllBucketImages = async (date: Date): Promise<any> => {
         },
     });
 
-    const json = await response.json();
-    return json;
+    if (!response.ok) {
+        throw new Error(`getAllBucketImages failed, HTTP status ${response.status}`);
+    }
+
+    return response;
 };
