@@ -1,17 +1,21 @@
 import React, { ReactElement, useState } from 'react';
 import DatePicker from 'react-datepicker';
+// import ImgContainer from './imgContainer';
 import { getAllBucketImages } from '../api/image';
 import 'react-datepicker/dist/react-datepicker.css';
 
-export default function AlbumDatePicker(): ReactElement {
+const AlbumDatePicker = (): ReactElement => {
     const [startDate, setStartDate] = useState(new Date());
-    return <DatePicker selected={startDate} onChange={(date) => onStartDateChange(date ?? startDate)} />;
 
-    async function onStartDateChange(date: Date): Promise<void> {
+    const onStartDateChange = async (date: Date): Promise<void> => {
         if (!date || startDate === date) return;
         setStartDate(date);
 
         const json = await getAllBucketImages(date);
-        console.log(json);
-    }
-}
+        // Refresh the function that creates ImgContainer
+    };
+
+    return <DatePicker selected={startDate} onChange={(date) => onStartDateChange(date ?? startDate)} />;
+};
+
+export default AlbumDatePicker;
