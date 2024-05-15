@@ -1,11 +1,11 @@
-import AlbumDatePicker from './clients/components/AlbumDatePicker';
 import React from 'react';
+import AlbumContentContainer from './clients/components/AlbumContentContainer';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <AlbumDatePicker />
+      <AlbumContentContainer />
     </div>
   );
 }
