@@ -1,6 +1,6 @@
 import React, { ReactElement, useState, useEffect } from 'react';
 import { getAllBucketImages } from '../api/image';
-import ImgContainer from './ImgContainer';
+import ImgCard from './ImgCard';
 
 const ImageListContainer = ({ albumDate }: { albumDate: Date }): ReactElement => {
     const [base64ImageUrls, setBase64ImageUrls] = useState<string[]>([]);
@@ -30,7 +30,7 @@ const ImageListContainer = ({ albumDate }: { albumDate: Date }): ReactElement =>
         return (
             <div>
                 {base64ImageUrls.map((url) => (
-                    <ImgContainer base64ImageUrl={url} />
+                    <ImgCard base64ImageUrl={url} />
                 ))}
             </div>
         );
