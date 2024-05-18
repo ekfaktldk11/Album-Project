@@ -1,0 +1,6 @@
+.imgCard {
+    display: inline;
+    width: 300px;
+    height: 300px;
+    border: 0.2em solid black;
+}
