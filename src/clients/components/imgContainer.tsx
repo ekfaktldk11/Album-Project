@@ -4,4 +4,4 @@ const ImgContainer = ({base64ImageUrl}: { base64ImageUrl: string }): ReactElemen
     <img src={base64ImageUrl} alt="A loaded img selected on datePicker" />
 );
 
-export default ImgContainer
+export default ImgContainer;
