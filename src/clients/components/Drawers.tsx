@@ -30,8 +30,8 @@ export default function Drawers() {
     );
 
     return (
-        <div style={{ display: 'inline-block' }}>
-            <Button onClick={toggleDrawer(true)}><SVG_DRAWER /></Button>
+        <div className='drawer'>
+            <Button sx={{ borderRadius: 20 }} onClick={toggleDrawer(true)}><SVG_DRAWER /></Button>
             <Drawer open={open} onClose={toggleDrawer(false)}>
                 {DrawerList}
             </Drawer>
