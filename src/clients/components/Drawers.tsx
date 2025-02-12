@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -31,7 +31,7 @@ export default function Drawers() {
 
     return (
         <div className='drawer'>
-            <Button sx={{ borderRadius: 20 }} onClick={toggleDrawer(true)}><SVG_DRAWER /></Button>
+            <IconButton sx={{ marginLeft: '0.2em' }} onClick={toggleDrawer(true)}><SVG_DRAWER /></IconButton>
             <Drawer open={open} onClose={toggleDrawer(false)}>
                 {DrawerList}
             </Drawer>
