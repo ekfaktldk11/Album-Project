@@ -6,22 +6,26 @@ import Link from "@mui/material/Link";
 export default function Navbar() {
   return (
     <Box sx={{
-      display: 'flex',
       position: 'sticky',
       top: 0,
-      alignItems: 'center',
-      justifyContent: 'center',
       width: '100%',
+      height: '3em',
       typography: 'body1',
       borderBottom: 1,
       borderColor: 'divider',
-      ".drawer": {
-        position: 'relative',
-        left: '16px',
+      ".drawer": { // drawer.tsx
+        position: 'absolute',
+        left: 0,
+        top: '0.2em',
+      },
+      ".home": {
+        position: 'absolute',
+        left: '48%',
+        top: '0.8em',
       },
     }}>
       <Drawers />
-      <Link sx={{ color: 'black' }} href="/" underline="none">Jindorry</Link>
+      <Link className="home" sx={{ color: 'black' }} href="/" underline="none">Jindorry</Link>
     </Box>
   );
 }
