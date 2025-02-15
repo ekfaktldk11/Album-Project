@@ -1,11 +1,11 @@
 import React from "react";
-import Box from '@mui/material/Box';
+import Container from '@mui/material/Container'
 import Drawers from "./Drawers";
 import Link from "@mui/material/Link";
 
 export default function Navbar() {
   return (
-    <Box sx={{
+    <Container sx={{
       position: 'sticky',
       top: 0,
       width: '100%',
@@ -26,6 +26,6 @@ export default function Navbar() {
     }}>
       <Drawers />
       <Link className="home" sx={{ color: 'black' }} href="/" underline="none">Jindorry</Link>
-    </Box>
+    </Container>
   );
 }
