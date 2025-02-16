@@ -1,3 +1,11 @@
+# "Create-React-App" deprecated
+
+Since [create-react-app has been deprecated]((https://react.dev/blog/2025/02/14/sunsetting-create-react-app)), I created a new project using an alternative bootstrap option. This project will continue in the following repository.
+
+https://github.com/ekfaktldk11/Dori
+
+----
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
